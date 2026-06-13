@@ -77,6 +77,3 @@ The analysis utilizes an anonymized clinical dataset containing 2,205 rows and 1
 
 *For inquiries or collaboration, please reach out via GitHub*
 
-```
-
-```
