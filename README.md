@@ -5,10 +5,10 @@ This repository contains data analysis and cleaning notebooks developed during W
 
 ### Key Portfolios & Features
 *   **Task 1: Data Profiling & Column Cleaning** – Analyzed a clinical dataset to identify structural data type errors (Gender, GCS, SBP, Pulse) and engineered a remapping pipeline specifically for the Gender feature.
-*   **Task 2: Collaborative Data Imputation** – Handled respiratory rate anomalies, managed missing ($NaN$) values, and applied mean imputation to build a clean baseline dataset.
+*   **Task 2: Collaborative Data Imputation** – Handled respiratory rate anomalies, managed missing (NaN) values, and applied mean imputation to build a clean baseline dataset.
 *   **Task 3: Clinical Risk Visualization** – Plotted clinical distributions and relationships to isolate high-risk patients:
     *   *Histogram:* Categorizes patients by clinical breathing patterns (**Eupnea**, **Tachypnea**, or **Bradypnea**).
-    *   *Scatter Plot (Respiratory Rate vs. $FiO_2$):* Visually separates stable individuals from critical, high-risk patients requiring oxygen support.
+    *   *Scatter Plot (Respiratory Rate vs. FiO_2):* Visually separates stable individuals from critical, high-risk patients requiring oxygen support.
 
 ---
 
