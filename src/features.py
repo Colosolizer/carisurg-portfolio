@@ -4,7 +4,6 @@ import numpy as np
 def select_features(df: pd.DataFrame) -> pd.DataFrame:
     """
     Selects model features by excluding leakage, admin, and demographic columns.
-    Matches the 'choose columns; exclude leakage/admin/demographics' structure.
     """
     TARGET = "esi"
     DEMOGRAPHICS = ["age", "gender", "ethnicity", "race", "lang", "religion",
