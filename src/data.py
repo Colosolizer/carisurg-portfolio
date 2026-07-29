@@ -26,9 +26,12 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     # 1. Drop stray index columns
     df = df.drop(columns=[c for c in df.columns if c.startswith("Unnamed")], errors="ignore")
 
-    # 2. Force the vitals to be NUMBERS; unparseable text becomes NaN
+    # 2. Normalize glucose column names and force vitals to be NUMBERS
+    if "triage_glucose" in df.columns and "triage_vital_glucose" not in df.columns:
+        df = df.rename(columns={"triage_glucose": "triage_vital_glucose"})
+
     VITALS = ["triage_vital_hr", "triage_vital_sbp", "triage_vital_dbp", 
-              "triage_vital_rr", "triage_vital_o2", "triage_vital_temp", "triage_glucose"]
+              "triage_vital_rr", "triage_vital_o2", "triage_vital_temp", "triage_vital_glucose"]
     
     for col in VITALS:
         if col in df.columns:
